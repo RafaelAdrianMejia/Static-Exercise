@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var celsius = TempConverter.FahrenheitToCelsius(32);
+            Console.WriteLine($"98 Fahrenheit is {celsius} degrees Celsius.");
+
+            var fahrenheit = TempConverter.CelsiusToFahrenheit(celsius);
+            Console.WriteLine($"It is {fahrenheit} converted back to Fahrenheit.");
+
         }
     }
 }
